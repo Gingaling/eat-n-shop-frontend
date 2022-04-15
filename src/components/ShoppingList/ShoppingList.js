@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import GroceryList from GroceryList;
+// import GroceryList from 'GroceryList';
 
 export default function ShoppingList() {
 	const [groceryList, setGroceryList] = useState([]);
 	useEffect(
 		() => {
-			fetch(`https://eat-n-shop5.herokuapp.com//grocery/`)
+			fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
 				.then(response => {
 					return response.json();
 				})

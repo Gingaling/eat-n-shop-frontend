@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Home from './components/Home/Home';
 import './App.css';
 import { Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
-import GroceryList from './components/GroceryList/GroceryList';
+import GroceryList from './components/AllGroceryList/GroceryList';
+import ShoppingList from './components/ShoppingList/ShoppingList';
 import Form from './components/Form/Form';
 import Nav from './components/Nav/Nav';
 
@@ -39,6 +40,7 @@ function App() {
                 <Routes>
                     <Route path='/list' element={<GroceryList />} />
                     <Route path='/eaten' element={<GroceryList.eaten />} />
+                    <Route path='/ShoppingList' element={<ShoppingList.js />} />
                     <Route path='/add-grocery' element={<Form />} />
                     <Route path='/' element={<Home />} />
                 </Routes>
