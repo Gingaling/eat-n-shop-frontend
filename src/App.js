@@ -29,11 +29,11 @@ function App() {
                     <div id='title-nav'>
                         <Link to='/'>
                             <h1 id='page-title'>Eat 'n Shop</h1>
-                            {/* <img  className="App-Logo" src="https://i.imgur.com/GZDFcLgt.png" /> */}
                         </Link>
                     </div>
                 </div>
             </header>
+            <img src="https://i.imgur.com/QySQprgm.png" className="App-logo" alt="logo" />
             <Nav classState={classState} />
             <div>
                 <Routes>

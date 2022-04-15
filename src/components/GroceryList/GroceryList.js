@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 
 export default function GroceryList() {
 	const [groceryList, setGroceryList] = useState([]);
-	const { type } = useParams();
 	useEffect(
 		() => {
 			fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
@@ -18,7 +17,7 @@ export default function GroceryList() {
 					console.log('error');
 				});
 		},
-		[type]           
+		[]           
 	);
 
 	return (

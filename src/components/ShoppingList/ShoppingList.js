@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-
-import { useParams } from 'react-router-dom';
+import GroceryList from GroceryList;
 
 export default function ShoppingList() {
 	const [groceryList, setGroceryList] = useState([]);
-	const { type } = useParams();
 	useEffect(
 		() => {
-			fetch(`https://eat-n-shop5.herokuapp.com//grocery/type/${''}`)
+			fetch(`https://eat-n-shop5.herokuapp.com//grocery/`)
 				.then(response => {
 					return response.json();
 				})
@@ -18,7 +16,7 @@ export default function ShoppingList() {
 					console.log('error');
 				});
 		},
-		[type]
+		[]
 	);
 
 	return (
