@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // import GroceryList from 'GroceryList';
 
 export default function ShoppingList() {
-	const [groceryList, setGroceryList] = useState([]);
+	const [shoppingList, setShoppingList] = useState([]);
 	useEffect(
 		() => {
 			fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
@@ -10,7 +10,7 @@ export default function ShoppingList() {
 					return response.json();
 				})
 				.then(data => {
-					setGroceryList(data);
+					setShoppingList(data);
 				})
 				.catch(error => {
 					console.log('error');
@@ -20,16 +20,15 @@ export default function ShoppingList() {
 	);
 
 	return (
-		<div key="">
+		key="">
 			<div className="groceryList-container">
-				{groceryList &&
-					groceryList.filter(GroceryList =>
-						<div key={GroceryList.onHand - GroceryList.eaten < GroceryList.minimum}>
-							<h2>
-								{GroceryList.name}
-							</h2>
-						</div>
-					)}
+				{shoppingList &&
+					shoppingList.filter(ShoppingList =>
+					<div key={ShoppingList.name}, ({ShoppingList.onHand} - {ShoppingList.eaten} < {ShoppingList.minimum}) ?
+						<h2>{ShoppingList.name}</h2> : {console.log('condition unmet')}
+					</div>
+				)}
+				<h2>shoppingList.name</h2>
 			</div>
 		</div>
 	);

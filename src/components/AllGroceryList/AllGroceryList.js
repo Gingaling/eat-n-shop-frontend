@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 
-export default function GroceryList() {
+export default function AllGroceryList() {
 	const [groceryList, setGroceryList] = useState([]);
 	useEffect(
 		() => {
@@ -23,10 +23,10 @@ export default function GroceryList() {
 		<div key="">
 			<div className="groceryList-container">
 				{groceryList &&
-					groceryList.filter(GroceryList =>
+					groceryList.map(GroceryList =>
 						<div key={GroceryList.name}>
 							<h2>
-								{{GroceryList.onHand} - {GroceryList.eaten} < {GroceryList.minimum}}
+								{GroceryList.name} - {GroceryList.howMuch}
 							</h2>
 						</div>
 					)}
