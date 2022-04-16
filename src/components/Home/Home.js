@@ -12,7 +12,7 @@ export default function Home() {
 
 	return (
 		<main id="main-content">
-		{/* <img alt="" src="https://imgur.com/FnJvazH" /> */}
+			{/* <img alt="" src="https://imgur.com/FnJvazH" /> */}
 			<div id="grocery-container">
 				<div>
 					<div className="home-CTA">
