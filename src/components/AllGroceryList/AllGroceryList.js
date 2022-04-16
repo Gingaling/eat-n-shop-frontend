@@ -20,17 +20,25 @@ export default function AllGroceryList() {
 	);
 
 	return (
+		<>
+		<div id="all-grocery-container">
+		<h1 id="cupboard-title" className="animate__animated animate__zoomInDown">In my cupboard:</h1>
 		<div key="">
 			<div className="groceryList-container">
 				{groceryList &&
 					groceryList.map(GroceryList =>
 						<div key={GroceryList.name}>
-							<h2>
-								{GroceryList.name} - {GroceryList.howMuch}
-							</h2>
+							<div id="return-container">
+
+								<h2 className="animate__animated animate__zoomInDown">{GroceryList.name} ({GroceryList.howMuch} {GroceryList.unitMeasure} left)</h2>
+							
+							</div>
 						</div>
-					)}
+					)
+				}
 			</div>
 		</div>
-	);
+		</div>
+		</>
+		);
 }

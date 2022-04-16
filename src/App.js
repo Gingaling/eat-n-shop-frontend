@@ -31,7 +31,7 @@ function App() {
                     <div id='title-nav'>
                         <Link to='/'>
                             <div id="titlealone">
-                                Eat 'n Shop
+                                <h4 className="animate__animated animate__rotateInUpRight">Eat 'n Shop</h4>
                             </div>
                         </Link>
                     </div>
