@@ -1,26 +1,27 @@
 import 'animate.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import AllGroceryList from './components/AllGroceryList/AllGroceryList';
+import EatenList from './components/EatenList/EatenList';
+import ShoppingList from './components/ShoppingList/ShoppingList';
 import Form from './components/Form/Form';
 import Home from './components/Home/Home';
-import Nav from './components/Nav/Nav';
+// import Nav from './components/Nav/Nav';
 
 function App() {
-    const [isActive, setIsActive] = useState(true);
-    const [classState, setClassState] = useState('inactive');
+    // const [isActive, setIsActive] = useState(true);
+    // const [classState, setClassState] = useState('inactive');
 
-    function handleClick() {
-        setIsActive(!isActive);
-
-        if (isActive) {
-            setClassState('active');
-        } else {
-            setClassState('inactive');
-        }
-        return classState;
-    }
+    // function handleClick() {
+    //     setIsActive(!isActive);
+    //     if (isActive) {
+    //         setClassState('active');
+    //     } else {
+    //         setClassState('inactive');
+    //     }
+    //     return classState;
+    // }
 
     return (
         <>
@@ -36,7 +37,7 @@ function App() {
                     </div>
                 </div>
             </header>
-            <Nav classState={classState} />
+            {/* <Nav classState={classState} /> */}
             <div>
                 <Routes>
                     <Route path='/list' element={<AllGroceryList />} />

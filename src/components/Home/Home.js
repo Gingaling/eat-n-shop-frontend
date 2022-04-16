@@ -10,14 +10,12 @@ export default function Home() {
 	// 	console.log(searchGenre);
 	// }
 
-	return (
-		<main id="main-content">
+	return <main id="main-content">
 			<div id="grocery-container">
 				<div>
 					<div className="home-CTA">
 						<div className="animate_animated animate_flip">
-							Keeping Track of Your Cupboard and Cooking for{' '}
-							<span>Smarter Shopping</span>
+							Keeping Track of Your Cupboard and Cooking for <span>Smarter Shopping</span>
 						</div>
 					</div>
 					<div id="top-nav-bar-">
@@ -26,7 +24,11 @@ export default function Home() {
 								<ul className="nav-ul">
 									<Link to="/list">
 										<div id="zz">
-											<li className="navs">Current Inventory</li>
+											<li className="navs">
+												<div id="icon-border">
+													<img id="icon-cupboard" alt="" src="https://i.imgur.com/VmOS67Kh.png" />My Cupboard
+												</div>
+											</li>
 										</div>
 									</Link>
 									<Link to="/eaten">
@@ -50,13 +52,8 @@ export default function Home() {
 							</div>
 						</nav>
 					</div>
-					<img
-						id="splash-image"
-						alt=""
-						src="https://cdn.pixabay.com/photo/2012/04/03/22/49/fruits-25266_960_720.jpg"
-					/>
+					<img id="splash-image" alt="" src="https://cdn.pixabay.com/photo/2012/04/03/22/49/fruits-25266_960_720.jpg" />
 				</div>
 			</div>
-		</main>
-	);
+		</main>;
 }

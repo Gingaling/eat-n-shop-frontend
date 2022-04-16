@@ -7,7 +7,7 @@ function Nav() {
             <nav className='navs' id='nav-genres'>
                 <ul className='nav-ul'>
                     <Link to='/list'>
-                        <li className='navs'>Current Inventory</li>
+                        <li className='navs'>My Cupboard</li>
                     </Link>
                     <Link to='/eaten'>
                         <li className='navs'>What I Have Eaten</li>
