@@ -10,18 +10,6 @@ import Home from './components/Home/Home';
 // import Nav from './components/Nav/Nav';
 
 function App() {
-    // const [isActive, setIsActive] = useState(true);
-    // const [classState, setClassState] = useState('inactive');
-
-    // function handleClick() {
-    //     setIsActive(!isActive);
-    //     if (isActive) {
-    //         setClassState('active');
-    //     } else {
-    //         setClassState('inactive');
-    //     }
-    //     return classState;
-    // }
 
     return (
         <>
@@ -31,7 +19,7 @@ function App() {
                     <div id='title-nav'>
                         <Link to='/'>
                             <div id="titlealone">
-                                <h4 className="animate__animated animate__rotateInUpRight">Eat 'n Shop</h4>
+                                <h4 className="t">Eat 'n Shop</h4>
                             </div>
                         </Link>
                     </div>

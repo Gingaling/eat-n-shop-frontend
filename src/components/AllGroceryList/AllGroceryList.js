@@ -21,7 +21,8 @@ export default function AllGroceryList() {
 
 	return (
 		<>
-		<div id="all-grocery-container">
+		<div id="cupboard-container">
+		<img id="cupboard-image" className="animate__animated animate__zoomInDown" alt="" src='https://i.imgur.com/f53Oo7vm.jpg' />
 		<h1 id="cupboard-title" className="animate__animated animate__zoomInDown">In my cupboard:</h1>
 		<div key="">
 			<div className="groceryList-container">

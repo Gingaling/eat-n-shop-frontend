@@ -19,20 +19,21 @@ export default function ShoppingList() {
 		[]
 	);
 
-	return <main>
-			shoppingList.grocery.map(grocery) => (
-			{shoppingList.howMuch - shoppingList.eaten < shoppingList.minimum ? <h2>
-						shoppingList[name]</h2> : console.log('condition unmet')}
-		</main>;
-		// key="">
-		// 	<div className="groceryList-container">
-		// 		{shoppingList &&
-		// 			shoppingList.filter(key={ShoppingList,name}), ShoppingList =>
-		// 			{shoppingList.howMuch} - {shoppingList.eaten} < {shoppingList.minimum} ?
-		// 				<h2>{ShoppingList.name}</h2> : {console.log('condition unmet')}
-		// 			</div>
-		// 		)}
-		// 		<h2>shoppingList.name</h2>
-		// 	</div>
-		// </div>
+	return (
+	<>
+		<div key="">
+			<div>
+				{shoppingList && shoppingList.filter(shoppingList =>
+					{shoppingList.howMuch - shoppingList.eaten < shoppingList.minimum}).map(shoppingList =>
+						<div key={shoppingList.name}>
+							<h3 className="animate__animated animate__bounceInDown">
+							{shoppingList.name} ({shoppingList.howMuch - shoppingList.eaten} {shoppingList.unitMeasure} left)
+							</h3>
+						</div>
+					)
+				}
+			</div>
+		</div>
+	</>
+	)
 }

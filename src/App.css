@@ -14,7 +14,7 @@ body {
 	flex-direction: row;
 	width: 100%;
 	height: 4vh;
-	font-size: 5vh;
+	font-size: 4vh;
 	/* text-align: right; */
 	align-items: center;
 	margin-left: 65%;
@@ -32,7 +32,7 @@ body {
 }
 
 #titlealone {
-	font-size: 9rem;
+	font-size: 7rem;
 	font-family: 'Fredoka+One', cursive;
 	font-weight: bolder;
 	padding-top: 7%;
@@ -55,10 +55,9 @@ span {
 	padding-top: 1%;
 	padding-bottom: 1%;
 	text-align: left;
-	margin-top: 4%;
+	margin-top: 6%;
 	border: 6px solid black;
 }
-
 
 #main-content {
 	display: flex;
@@ -91,7 +90,6 @@ span {
 	flex-direction: row;
 	font-size: 25px;
 	font-weight: bolder;
-	justify-content: space-evenly;
 	width: 100%;
 	padding: 0;
 	margin-top: 20px;
@@ -105,33 +103,81 @@ span {
 }
 
 @media only screen and (min-width: 1200px) {
-	#roulette-container {
-		display: flex;
-		max-width: 800px;
+}
 
-		margin: 0 auto;
-	}
+#roulette-container {
+	display: flex;
+	max-width: 800px;
+	margin: 0 auto;
+}
 
-	#page-title {
-		font-size: 5rem;
-	}
+#page-title {
+	font-size: 4rem;
+}
+
+#cupboard-container {
+	align-content: center;
+	text-align: center;
+	font-size: larger;
+	width: 40%;
+	padding: 3em;
+	border-radius: 20px;
+	background-color: lightblue;
+	margin-top: 9%;
+	margin-left: 30%;
+	border: 8px solid blue;
+}
+
+#cupboard-container {
+	align-content: center;
+	text-align: center;
+	font-size: larger;
+	width: 40%;
+	padding: 1em;
+	border-radius: 30px;
+	background-color: rgb(128, 176, 112);
+	margin-top: 9%;
+	margin-left: 30%;
+	border: 8px solid rgb(8, 8, 119);
 }
 
 #cupboard-title {
 	font-size: 3em;
-	text-shadow: 15px, 13px;
+	text-shadow: 15px, 13px, 13px, black;
+	color: rgb(169, 42, 42);
 }
 
-#all-grocery-container {
+#cupboard-image {
+	width: 40%;
+	padding: 0;
+	margin: 0
+}
+
+#eaten-container {
 	align-content: center;
 	text-align: center;
-	width: 30%;
-	padding: 1em;
-	background-color: rgb(145, 145, 250);
-	margin-top: 10%;
+	font-size: larger;
+	width: 40%;
+	padding: 3em;
+	border-radius: 20px;
+	background-color: rgb(82, 193, 230);
+	margin-top: 9%;
 	margin-left: 30%;
-	border: 20px, solid, black;
+	border: 8px solid rgb(32, 32, 46);
 }
+
+#eaten-title {
+	font-size: 3em;
+	text-shadow: 15px, 13px, 13px, black;
+	color: rgb(152, 26, 26);
+}
+
+#eaten-image {
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
 #return-container {
 	margin-top: 3%;
 	font-family: 'Roboto', sans-serif;

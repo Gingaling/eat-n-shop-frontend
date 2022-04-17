@@ -13,20 +13,28 @@ export default function EatenList() {
 			.catch(error => {
 				console.log('error');
 			});
-	}, []);
+	}, []
+);
 
 	return (
+		<>
+		<div id="eaten-container">
+		<img className="animate__animated animate__backInLeft" id="eaten-image" alt="" src='https://i.imgur.com/HtP5uigt.png' />
+		<h1 id="eaten-title" className="animate__animated animate__zoomInDown">I have eaten:</h1>
 		<div key="">
-			<div className="groceryList-container">
-				{eatenList &&
-					eatenList.map(EatenList =>
-						<div key={EatenList.name}>
-							<h2>
-								{EatenList.date}: {EatenList.name} - {EatenList.eaten}
-							</h2>
+			<div>
+				{eatenList && eatenList.filter(eatenList =>
+					eatenList.eaten > 0).map(eatenList =>
+						<div key={eatenList.name}>
+							<h3 className="animate__animated animate__bounceInDown">
+								{eatenList.Date}: {eatenList.name} ({eatenList.eaten})
+							</h3>
 						</div>
-					)}
+					)			
+				}
 			</div>
 		</div>
-	);
+		</div>
+		</>
+	)
 }
