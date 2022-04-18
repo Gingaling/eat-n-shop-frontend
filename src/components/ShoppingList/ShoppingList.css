@@ -4,10 +4,33 @@
 	box-sizing: border-box;
 }
 
-.form-container {
-	font-weight: bolder;
+.shopping-container {
+	font-size: 4vh;
+	color: black;
+	text-align: center;
+	justify-content: space-around;
+}
+
+#shopping-text {
+	font-size: 50;
+	text-align: center;
+	justify-contents: space-around
+}
+
+#nav4 {
 	display: flex;
+	flex-direction: row;
+	: center;
+	justify-content: space-between;
+}
+
+.shoppingContainer {
+	font-weight: bolder;
+	font-family:'Times New Roman', Times, serif;
+	display: flex;
+	width: 60%;
 	color: rgba(239, 239, 246, 0.854);
+	background-color:rgb(117, 90, 90);
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
@@ -16,8 +39,12 @@
 	border: solid .1em black;
 	border-radius: 5px;
 	font-family: 'Fredoka+One', cursive;
-	background-image: url("https://i.imgur.com/PcZds5T.jpg/");
+	background-image: url();
 	box-shadow: 5px 5px 5px 2px rgb(99, 98, 98);
+}
+
+#shopping-text {
+	text-size: vh;
 }
 
 /* === Top Bar === */

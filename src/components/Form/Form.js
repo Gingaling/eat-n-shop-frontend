@@ -9,6 +9,7 @@ function Form() {
 		name: '',
 		howMuch: 0,
 		eaten: 0,
+		remaining: 0,
 		minimum: 0,
 		img: '',
 		unitMeasure: '',
