@@ -25,7 +25,7 @@ function Form() {
 		event.preventDefault();
 		console.log(grocery);
 		axios
-			.post('https://eat-n-shop-api.herokuapp.com/grocery', grocery)
+			.post(`https://eat-n-shop-api.herokuapp.com/grocery/`, grocery)
 			.then(res => {
 				console.log(res);
 				if (res.status === 200) {
@@ -76,7 +76,6 @@ function Form() {
 										id="howMuch"
 										value={grocery.howMuch}
 										placeholder="amount"
-										required
 									/>
 								</div>
 							</div>
@@ -103,7 +102,6 @@ function Form() {
 										id="minimum"
 										value={grocery.minimum}
 										placeholder="amount"
-										required
 									/>
 								</div>
 							</div>
@@ -116,7 +114,7 @@ function Form() {
 										onChange={handleChange}
 										id="img"
 										value={grocery.img}
-										placeholder="http://exampleurl.com"
+										placeholder="http://image.png"
 									/>
 								</div>
 							</div>
@@ -130,7 +128,6 @@ function Form() {
 										id="unitMeasure"
 										value={grocery.unitMeasure}
 										placeholder="unit"
-										required
 									/>
 								</div>
 							</div>{' '}
@@ -144,7 +141,6 @@ function Form() {
 										id="purchased"
 										value={grocery.purchased}
 										placeholder="false"
-										required
 									/>
 								</div>
 							</div>{' '}
@@ -158,7 +154,6 @@ function Form() {
 										id="Date"
 										value={grocery.Date}
 										placeholder="yyyy-mm-dd"
-										required
 									/>
 								</div>
 							</div>

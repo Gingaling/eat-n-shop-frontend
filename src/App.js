@@ -1,12 +1,14 @@
 import 'animate.css';
-// import { useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import AllGroceryList from './components/AllGroceryList/AllGroceryList';
 import EatenList from './components/EatenList/EatenList';
+import UpdateGroceryList from './components/UpdateGroceryList/UpdateGroceryList';
 import ShoppingList from './components/ShoppingList/ShoppingList';
 import Form from './components/Form/Form';
 import Home from './components/Home/Home';
+
 // import Nav from './components/Nav/Nav';
 
 function App() {
@@ -25,11 +27,11 @@ function App() {
                     </div>
                 </div>
             </header>
-            {/* <Nav classState={classState} /> */}
             <div>
                 <Routes>
                     <Route path='/list' element={<AllGroceryList />} />
                     <Route path='/eaten' element={<EatenList />} />
+                    <Route path='/update' element={<UpdateGroceryList />} />
                     <Route path='/shop' element={<ShoppingList />} />
                     <Route path='/add-grocery' element={<Form />} />
                     <Route path='/' element={<Home />} />

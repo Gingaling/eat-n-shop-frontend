@@ -27,7 +27,7 @@ export default function EatenList() {
 					eatenList.eaten > 0).map(eatenList =>
 						<div key={eatenList.name}>
 							<h3 className="animate__animated animate__bounceInDown">
-								{eatenList.Date}: {eatenList.name} ({eatenList.eaten})
+								{eatenList.Date}: {eatenList.name} ({eatenList.eaten} {eatenList.unitMeasure})
 							</h3>
 						</div>
 					)			
