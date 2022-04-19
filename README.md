@@ -1,4 +1,4 @@
-<h4>eat-n-shop-frontend (frontend repository)</h4>
+####eat-n-shop-frontend (frontend repository)####
 <h4>eat-n-shop-apt (backend repository)</h4>
 deployment URL: https://profound-moonbeam-1e2506.netlify.app/
 <h2>BRIEF DESCRIPTION</h2>
