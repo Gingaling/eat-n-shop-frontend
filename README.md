@@ -14,34 +14,33 @@ An initial wireframe follows. The final design deviates somewhat from the initia
 
 <h2>Tech Stack</h2>
 This project utilized on the front end:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;React, FlexBox and animation from Animate.css<br>
-&nbsp;&nbsp;&nbsp;&nbsp;with deployment to Netlify; and<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Mongoose, Express, Mongodb on the backend,
-&nbsp;&nbsp;&nbsp;&nbsp;with deployment to Heroku.
+&nbsp;&nbsp;&nbsp;&nbsp;React, FlexBox and animation from Animate.css; with deployment to Netlify; and<br>
+On the backend:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Mongoose, Express, Mongodb; with deployment to Heroku.
 <h2>Backend Model and its Properties</h2>
 This used only one model, Grocery.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Grocery<br>
-&nbsp;&nbsp;&nbsp;&nbsp;name: { type: String, require: true, unique: true },<br>
-&nbsp;&nbsp;&nbsp;&nbsp;howMuch: { type: Number, default: 0 },<br>
-    eaten: { type: Number, default: 0 },<br>
-	  remaining: {<br>
-	  	type: Number,<br>
-		  default: function() {<br>
-			return this.howMuch - this.eaten;<br>
-		  }<br>
-	  },<br>
-	  minimum: { type: Number, require: true },<br>
-	  unitMeasure: String,<br>
-	  purchased: Boolean,<br>
-	  Date: String,<br>
-	  img: String,<br>
-	  type: String<br>
- <h2> ReactComponent Hierarchy</h2>
-   App.js<br>
-    Home.js<br>
-      AllGroceryList<br>
-      Form<br>
-      EatenList<br>
-      ShoppingList<br>
-      UpdateGroceryList<br>
-   Nav<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: { type: String, require: true, unique: true },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;howMuch: { type: Number, default: 0 },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eaten: { type: Number, default: 0 },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remaining: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: Number,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.howMuch - this.eaten;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimum: { type: Number, require: true },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unitMeasure: String,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;purchased: Boolean,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date: String,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;img: String,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: String<br>
+<h2> ReactComponent Hierarchy</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;App.js<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home.js<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AllGroceryList<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EatenList<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ShoppingList<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdateGroceryList<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nav<br>
