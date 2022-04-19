@@ -2,7 +2,9 @@
 # eat-n-shop-apt (backend repository)
 deployment URL: https://profound-moonbeam-1e2506.netlify.app/
 <h1>BRIEF DESCRIPTION
-<h3>Eat-n-Shop is a fod inventory application. At a minimum, it tracks what foods a user currently has in their cupboard or refrigerator. It also permits a user to record what they eat. With these two pieces of information the user will know when they are running low on a food item. Their food shopping will thus be more efficient and will eliminate those trips to the supermarket because one has forgotten that one product they meant to buy. The app will catalog a variety of pieces of data with many of those already laying the ground for future functionality.
+<h3>Kitchen Counter is a food inventory application. At a minimum, it tracks what foods a user currently has in their cupboard or refrigerator. It also permits a user to record what they eat. With these two pieces of information the user will know when they are running low on a food item. Their food shopping will thus be more efficient and will eliminate those trips to the supermarket because one has forgotten that one product they meant to buy. The app will catalog a variety of pieces of data with many of those already laying the ground for future functionality.
+
+This API drew on elements learned and developed from a prior General Assembly team project, Book Roulette.  As such, I would like to acknowledge my most capable teammates Michael Brock, Sarah Daehn, and Michelle McPherson. (links to be added)
 <h2>![image](https://user-images.githubusercontent.com/59627995/163839842-097abea5-bb9a-44c0-8bf6-03c7e91967b5.png)
 
 <h3>
