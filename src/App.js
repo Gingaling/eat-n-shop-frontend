@@ -21,7 +21,7 @@ function App() {
                     <div id='title-nav'>
                         <Link to='/'>
                             <div id="titlealone">
-                                <h4 className="t">Eat 'n Shop</h4>
+                                <h4 className="t">Kitchen Counter</h4>
                             </div>
                         </Link>
                     </div>

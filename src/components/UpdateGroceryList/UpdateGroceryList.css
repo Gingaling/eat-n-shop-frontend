@@ -11,13 +11,13 @@
 	display: flex;
 	color: rgba(15, 34, 9, 0.854);
 	flex-direction: column;
-	justify-content: right;
-	text-align: right;
+	justify-content: left;
+	text-align: left;
 	margin: 2rem 2rem 2rem 2rem;
 	padding: 1.5em 1em;
 	border: solid .5m black;
 	border-radius: 15px;
-	background-image: url("https://i.imgur.com/PcZds5T.jpg/");
+	background-image: url("");
 	box-shadow: 5px 15px 15px 2px rgb(99, 98, 98);
 }
 
