@@ -2,7 +2,9 @@
 <h4>eat-n-shop-apt (backend repository)</h4>
 deployment URL: https://profound-moonbeam-1e2506.netlify.app/
 <h2>BRIEF DESCRIPTION</h2>
-Kitchen Counter is a food inventory application. At a minimum, it tracks what foods a user currently has in their cupboard or refrigerator. It also permits a user to record what they eat. With these two pieces of information the user will know when they are running low on a food item. Their food shopping will thus be more efficient and will eliminate those trips to the supermarket because one has forgotten that one product they meant to buy. The app will catalog a variety of pieces of data with many of those already laying the ground for future functionality. This API drew on elements learned and developed from a prior General Assembly team project, Book Roulette.  As such, I would like to acknowledge my most capable teammates Michael Brock, Sarah Daehn, and Michelle McPherson. (links to be added)
+Kitchen Counter is a food inventory application. At a minimum, it tracks what foods a user currently has in their cupboard or refrigerator. It also permits a user to record what they eat. With these two pieces of information the user will know when they are running low on a food item. Their food shopping will thus be more efficient and will eliminate those trips to the supermarket because one has forgotten that one product they meant to buy. The app will catalog a variety of pieces of data with many of those already laying the ground for future functionality.
+<br>
+This API drew on elements learned and developed from a prior General Assembly team project, Book Roulette.  As such, I would like to acknowledge my most capable teammates Michael Brock, Sarah Daehn, and Michelle McPherson. (links to be added)
 <h4>![image](https://user-images.githubusercontent.com/59627995/163839842-097abea5-bb9a-44c0-8bf6-03c7e91967b5.png)</h4>
 
 An initial wireframe follows. The final design deviates somewhat from the initial wireframe. Changes, largely, were for the better as it concerned aesthetic as well as functionality.
@@ -16,29 +18,29 @@ This project utilized on the front end:
    Mongoose, Express, Mongodb on the backend,
    with deployment to Heroku.
 <h2>Backend Model and its Properties</h2>
-This used only one model, Grocery.
-  Grocery<\n>
-  	name: { type: String, require: true, unique: true },
-    howMuch: { type: Number, default: 0 },
-    eaten: { type: Number, default: 0 },
-	  remaining: {
-	  	type: Number,
-		  default: function() {
-			return this.howMuch - this.eaten;
-		  }
-	  },
-	  minimum: { type: Number, require: true },
-	  unitMeasure: String,
-	  purchased: Boolean,
-	  Date: String,
-	  img: String,
-	  type: String
- <h2> ReactComponent Hierarchy
-   App.js
-    Home.js
-      AllGroceryList
-      Form
-      EatenList
-      ShoppingList
-      UpdateGroceryList
-   Nav
+This used only one model, Grocery.<br>
+  Grocery<br>
+  	name: { type: String, require: true, unique: true },<br>
+    howMuch: { type: Number, default: 0 },<br>
+    eaten: { type: Number, default: 0 },<br>
+	  remaining: {<br>
+	  	type: Number,<br>
+		  default: function() {<br>
+			return this.howMuch - this.eaten;<br>
+		  }<br>
+	  },<br>
+	  minimum: { type: Number, require: true },<br>
+	  unitMeasure: String,<br>
+	  purchased: Boolean,<br>
+	  Date: String,<br>
+	  img: String,<br>
+	  type: String<br>
+ <h2> ReactComponent Hierarchy</h2><br>
+   App.js<br>
+    Home.js<br>
+      AllGroceryList<br>
+      Form<br>
+      EatenList<br>
+      ShoppingList<br>
+      UpdateGroceryList<br>
+   Nav<br>
