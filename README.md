@@ -8,8 +8,7 @@ deployment URL: https://profound-moonbeam-1e2506.netlify.app/
 This API drew on elements learned and developed from a prior General Assembly team project, Book Roulette.  As such, I would like to acknowledge my most capable teammates Michael Brock, Sarah Daehn, and Michelle McPherson. (links to be added)
 <h2>![image](https://user-images.githubusercontent.com/59627995/163839842-097abea5-bb9a-44c0-8bf6-03c7e91967b5.png)
 
-<h3>
-An initial wireframe follows. The final design deviates somewhat from the initial wireframe. Changes, largely, were for the better as it concerned aesthetic as well as functionality.
+<h3>An initial wireframe follows. The final design deviates somewhat from the initial wireframe. Changes, largely, were for the better as it concerned aesthetic as well as functionality.
   
 [Wireframe.pdf](https://github.com/Gingaling/eat-n-shop-frontend/files/8506623/Wireframe.pdf)
 
