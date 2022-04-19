@@ -9,15 +9,15 @@ An initial wireframe follows. The final design deviates somewhat from the initia
   
 [Wireframe.pdf](https://github.com/Gingaling/eat-n-shop-frontend/files/8506623/Wireframe.pdf)
 
-<h2>Tech Stack
-<h3>This project utilized on the front end:
+<h2>Tech Stack</h2>
+This project utilized on the front end:
    React, FlexBox and animation from Animate.css
    with deployment to Netlify; and
    Mongoose, Express, Mongodb on the backend,
    with deployment to Heroku.
-<h2>Backend Model and its Properties
-<h3>This used only one model, Grocery.
-  Grocery
+<h2>Backend Model and its Properties</h2>
+This used only one model, Grocery.
+  Grocery<\n>
   	name: { type: String, require: true, unique: true },
     howMuch: { type: Number, default: 0 },
     eaten: { type: Number, default: 0 },
