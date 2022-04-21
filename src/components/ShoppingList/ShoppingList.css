@@ -2,6 +2,8 @@
 
 * {
 	box-sizing: border-box;
+	padding: 0px;
+	width: 100%
 }
 
 .shopping-container {
@@ -234,30 +236,4 @@
 	background: transparent;
 	border: none;
 	font-style: italic;
-}
-
-
-
-/* === Media Queries === */
-@media (min-width: 600px) {
-	.form-container {
-		width: 500px;
-	}
-	.master-container {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-@media (max-width: 350px) {
-	.form-container {
-		width: 90vw;
-	}
-	.master-container {
-		display: flex;
-		justify-content: center;
-	}
-	.addBookButton-container {
-		width: auto;
-	}
 }

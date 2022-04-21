@@ -6,7 +6,7 @@ export default function AllGroceryList() {
 	const [groceryList, setGroceryList] = useState([]);
 	useEffect(
 		() => {
-			fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
+			fetch(`https://kitchen-count.herokuapp.com/grocery/`)
 				.then(response => {
 					return response.json();
 				})

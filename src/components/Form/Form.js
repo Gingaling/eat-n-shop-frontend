@@ -26,15 +26,13 @@ function Form() {
 		event.preventDefault();
 		console.log(grocery);
 		axios
-			.post(`https://eat-n-shop-api.herokuapp.com/grocery/`, grocery)
+			.post(`https://kitchen-count.herokuapp.com/grocery/`, grocery)
 			.then(res => {
 				console.log(res);
 				if (res.status === 200) {
 					navigate('/');
 				} else {
-					alert(
-						"We're sorry. We were not able to process your request. Please try again."
-					);
+					alert("We're sorry. We were not able to process your request. Please try again.");
 				}
 			})
 			.catch(err => console.log(err));

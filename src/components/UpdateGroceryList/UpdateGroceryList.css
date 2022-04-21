@@ -2,19 +2,19 @@
 
 * {
 	box-sizing: border-box;
+	padding: 0px;
 }
 
 .grocery-details-container {
 	font-family: 'Seminole One';
 	font-weight: bolder;
-	font-size: 2em;
+	font-size: 1em;
 	display: flex;
 	color: rgba(15, 34, 9, 0.854);
 	flex-direction: column;
-	justify-content: left;
-	text-align: left;
-	margin: 2rem 2rem 2rem 2rem;
-	padding: 1.5em 1em;
+	justify-content: center;
+	text-align: center;
+	padding: 0 0;
 	border: solid .5m black;
 	border-radius: 15px;
 	background-image: url("");
@@ -24,18 +24,18 @@
 .card-title {
 	color: white;
 	background-color: black;
-	font-size: 20px;
+	font-size: 40px;
 	border-bottom: solid .2em black;
 	font-weight: bolder;
 }
 
 .editGrocery {
-	background-color: ;
-	margin: 0 0 .3em 0;
+	background-color:black ;
+	color: white;
+	margin: 0 0 0 0;
 	padding: 0;
 	font-size: 1.5em;
-	text-align: center;
-	transform: scale(1, .75);
+	text-align: center
 }
 
 .name-container {

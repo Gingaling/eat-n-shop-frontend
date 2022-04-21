@@ -1,4 +1,7 @@
-import React, { useState, useEffect }from 'react';
+import React, {
+	useState,
+	useEffect
+} from 'react';
 import './ShoppingList.css'
 
 
@@ -6,7 +9,7 @@ export default function ShoppingList() {
 	const [shoppingList, setShoppingList] = useState([]);
 	useEffect(
 		() => {
-			fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
+			fetch(`https://kitchen-count.herokuapp.com/grocery/`)
 				.then(response => {
 					return response.json();
 				})
@@ -19,28 +22,28 @@ export default function ShoppingList() {
 		},
 		[]
 	);
-    
 
-	return (
-	<>
-    <section className="shopping-container">
+
+	return ( 
+		<>
+	
+		<div id="print-content" className="addGrocery">
+		<div className="shoppingContainer">
+		<div id="shopping-text"><h1>Shopping List </h1></div>
 		<div key="">
-        <div className="addGrocery">
-			<div className="shoppingContainer">
-            <div id="shopping-text"> Shopping List</div>
-				{shoppingList && shoppingList.filter(shoppingList =>
-					shoppingList.howMuch > 0).map(shoppingList => 
-                    <div key={shoppingList.name}>
-                    <h3 className="animate__animated animate__bounceInDown">
-                    <div id="nav4">
-                  ==>  {shoppingList.name} {shoppingList.howMuch} - {shoppingList.eaten} -    {shoppingList.minimum}</div>  </h3>
-						</div>
-					)
-				}
-			</div>
-            </div>
+		<div>
+			{shoppingList && shoppingList.filter(shoppingList =>
+				shoppingList.remaining < shoppingList.minimum).map(shoppingList =>
+				<div key={shoppingList.name}>
+				<h3 className="animate__animated animate__bounceInDown">
+				 {shoppingList.name}: {shoppingList.remaining} {shoppingList.unitMeasure} left  [min: {shoppingList.minimum}]
+				 </h3>
+				</div>
+			)
+		} </div> 
 		</div>
-        </section>
+		</div> 
+		</div>
 	</>
 	)
 }

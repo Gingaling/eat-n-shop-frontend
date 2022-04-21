@@ -10,7 +10,7 @@ export default function UpdateGroceryList() {
     const [grocery, setGrocery] = useState(null);
 
     useEffect(() => {
-        fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
+        fetch(`https://kitchen-count.herokuapp.com/grocery/`)
             .then(res => res.json())
             .then(data => {
                 setGrocery(data);
@@ -29,7 +29,7 @@ export default function UpdateGroceryList() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const res = await axios.put(`https://eat-n-shop-api.herokuapp.com/grocery/${grocery._id}`, grocery);
+            const res = await axios.put(`https://kitchen-count.herokuapp.com/grocery/${grocery._id}`, grocery);
             if (res.status === 200) {
                 console.log('all is good');
             }
@@ -44,7 +44,7 @@ export default function UpdateGroceryList() {
         if (confirm) {
             try {
                 // eslint-disable-next-line
-                const res = await axios.delete(`https://eat-n-shop-api.herokuapp.com/grocery/${grocery._id}`);
+                const res = await axios.delete(`https://kitchen-count.herokuapp.com/grocery/${grocery._id}`);
                 if (res.status === 200) {
                     navigate('/');
                 }
@@ -177,9 +177,8 @@ export default function UpdateGroceryList() {
                                 id="type"
                                 value={grocery.type}
                                 placeholder="type"
-         />
-                        /div>
-                    </div>
+                            />
+                        </div>
                     <div className="editButtons">
                         <button type="submit">
                             Submit Changes
@@ -187,7 +186,6 @@ export default function UpdateGroceryList() {
                         <button onClick={handleDelete}>
                             Delete
                          </button>
-                         navigate('/')
                     </div>
                 </div>
                 </div>

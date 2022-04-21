@@ -12,7 +12,7 @@ export default function Home() {
 	// }
 
 	return ( 
-	
+	<body id="main-splash">
 		<main id="main-content">
 			{/* <img alt="" src="https://imgur.com/FnJvazH" /> */}
 			<div id="grocery-container">
@@ -65,5 +65,6 @@ export default function Home() {
 				</div>
 			</div>
 		</main>
+	</body>
 	);
 }

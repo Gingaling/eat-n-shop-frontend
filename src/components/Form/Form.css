@@ -2,27 +2,36 @@
 
 * {
 	box-sizing: border-box;
+	padding: 0px;
+	width: 100%;
 }
 
 body {
-	background-color: rgb(231, 186, 102);
+	background-color: rgb(228, 189, 115);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .form-container {
 	font-family: 'Seminole One';
 	font-weight: bolder;
-	font-size: 2em;
+	width: 50%;
 	display: flex;
-	color: rgba(15, 34, 9, 0.854);
+	color: rgba(114, 237, 118, 0.854);
+	font-size: 2rem;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 	flex-direction: column;
 	justify-content: right;
 	text-align: right;
-	margin: 2rem 2rem 2rem 2rem;
+	margin: 6em 2rem 2rem 2rem;
 	padding: 1.5em 1em;
 	border: solid .5m black;
 	border-radius: 15px;
 	background-image: url("https://i.imgur.com/PcZds5T.jpg/");
-	box-shadow: 5px 15px 15px 2px rgb(99, 98, 98);
+	background-blend-mode: lighten;
+	box-shadow: 15px 15px 15px 10px rgb(99, 98, 98);
 }
 
 /* === Top Bar === */
@@ -169,36 +178,5 @@ input {
 .img-input {
 	background-color: white;
 	height: 3vh;
-	margin-top: 8px
-}
-
-
-/* === Media Queries === */
-@media (min-width: 600px) {
-	.form-container {
-		width: 500px;
-	}
-	.master-container {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-button {
-	font-weight: bolder;
-	border-radius: 20px;
-	width: 90px;
-	height: 40px;
-	background-color: rgb(211, 145, 145);
-}
-
-@media (max-width: 350px) {
-	.form-container {
-		width: 90vw;
-	}
-	.master-container {
-		display: flex;
-		justify-content: center;
-	}
-
+	margin-top: 8px;
 }

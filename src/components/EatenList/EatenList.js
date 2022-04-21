@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 export default function EatenList() {
 	const [eatenList, setEatenList] = useState([]);
 	useEffect(() => {
-		fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
+		fetch(`https://kitchen-count.herokuapp.com/grocery/`)
 			.then(response => {
 				return response.json();
 			})
@@ -18,6 +18,7 @@ export default function EatenList() {
 
 	return (
 		<>
+		<body id="eaten">
 		<div id="eaten-container">
 		<img className="animate__animated animate__backInLeft" id="eaten-image" alt="" src='https://i.imgur.com/HtP5uigt.png' />
 		<h1 id="eaten-title" className="animate__animated animate__zoomInDown">I have eaten:</h1>
@@ -35,6 +36,7 @@ export default function EatenList() {
 			</div>
 		</div>
 		</div>
+		</body>
 		</>
 	)
 }
