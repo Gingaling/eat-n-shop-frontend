@@ -67,13 +67,7 @@
 	transform: scale(1, .75);
 }
 
-.library {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	font-size: .8em;
-	transform: scale(1, .85);
-}
+
 
 /* === Main Content === */
 .addDetails-container {
@@ -165,42 +159,7 @@
 	justify-content: space-around;
 }
 
-/* === Non-Required Section Labels === */
-.notRequired-container {
-	margin: .3rem 0 0 0;
-	height: 2.4rem;
-	display: flex;
-}
 
-.notRequired-label {
-	width: 6.3em;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	border-top: .3em double black;
-	border-right: .1em solid black;
-	/* border-bottom: .1em solid black; */
-}
-
-.notRequired-label p {
-	font-size: 1rem;
-	transform: scale(1, .85);
-}
-
-.notRequired-input {
-	padding: 0 0 0 1em;
-	width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	/* border-bottom: .1em solid black; */
-	/* border-top: .3em double black; */
-}
-
-.notRequired-input p {
-	font-size: 1rem;
-	transform: scale(1, .85);
-}
 
 .img-container {
 	margin: 0;

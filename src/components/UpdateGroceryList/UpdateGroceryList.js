@@ -56,11 +56,11 @@ export default function UpdateGroceryList() {
 
       return (
         <>
-        <div id="cupboard-container">
-            <section className="form-container">
+        <div id="update-container">
+              <section className="form-container2">
                 <div className="card-title">
                     <h3 className="editGrocery">
-                        Modify your cupboard or record what you have eaten
+                        <i>Modify</i> your cupboard, <i>Update</i> what you have eaten or <i>Delete</i> a Record
                     </h3>
                 </div>
            <form onSubmit={handleSubmit}>
@@ -79,7 +79,7 @@ export default function UpdateGroceryList() {
                     </div>
                     <div className="howMuch-container">
                         <div className="howMuch-label">
-                            <label htmlFor="howMuch">amount on hand</label>
+                            <label htmlFor="howMuch">update amount on hand</label>
                         </div>
                         <div className="howMuch-input">
                             <input
@@ -92,7 +92,7 @@ export default function UpdateGroceryList() {
                </div>
                     <div className="eaten-container">
                         <div className="eaten-label">
-                           <label htmlFor="eaten">amount consumed</label>
+                           <label htmlFor="eaten">update amount consumed</label>
                         </div>
                         <div className="eaten-input">
                             <input
@@ -105,7 +105,7 @@ export default function UpdateGroceryList() {
                     </div>
            <div className="minimum-container">
                         <div className="minimum-label">
-                            <label htmlFor="minimum">my minimum</label>
+                            <label htmlFor="minimum">update my minimum</label>
                         </div>
                         <div className="minimum-input">
                             <input
@@ -180,18 +180,18 @@ export default function UpdateGroceryList() {
                             />
                         </div>
                     <div className="editButtons">
-                        <button type="submit">
-                            Submit Changes
+                        <button type="submit" className="editButton">
+                            Submit Updates
                         </button>
-                        <button onClick={handleDelete}>
-                            Delete
+                        <button className="deleteButton" onClick={handleDelete}>
+                            Delete a Record
                          </button>
                     </div>
                 </div>
                 </div>
                 </form>
-            </section>     
-        </div>
+            </section> 
+            </div>   
         </>
     );
 }
