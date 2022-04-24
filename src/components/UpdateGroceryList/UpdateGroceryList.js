@@ -71,9 +71,11 @@ export default function UpdateGroceryList() {
                         <div className="name-input">
                             <input 
                                 onChange={handleChange}
+                                key={grocery.name}
                                 id="name"
                                 value={grocery.name}
                                 placeholder="name of grocery modifying"
+                                required
                             />
                       </div>
                     </div>
@@ -84,6 +86,7 @@ export default function UpdateGroceryList() {
                         <div className="howMuch-input">
                             <input
                                 onChange={handleChange}
+                                key={grocery._id}
                                 id="howMuch" 
                                 value={grocery.howMuch}
                                 placeholder="amount" 
@@ -97,6 +100,7 @@ export default function UpdateGroceryList() {
                         <div className="eaten-input">
                             <input
                                 onChange={handleChange}
+                                 key={grocery._id}
                                 id="eaten"
                                 value={grocery.eaten}
                                 placeholder="amount"
@@ -109,7 +113,8 @@ export default function UpdateGroceryList() {
                         </div>
                         <div className="minimum-input">
                             <input
-                                onChange={handleChange} 
+                                onChange={handleChange}
+                                 key={grocery._id}
                                 id="minimum" 
                                 value={grocery.minimum}
                                 placeholder="amount"
@@ -123,6 +128,7 @@ export default function UpdateGroceryList() {
                         <div className="img-input">
                             <input
                                 onChange={handleChange}
+                                key={grocery._id}
                                 id="img"
                                 value={grocery.img}
                                 placeholder="http://image.png"
@@ -136,6 +142,7 @@ export default function UpdateGroceryList() {
                         <div className="unitMeasure-input">
                             <input
                                 onChange={handleChange}
+                                 key={grocery._id}
                                 id="unitMeasure"
                                 value={grocery.unitMeasure}
                                 placeholder="unit"
@@ -148,6 +155,7 @@ export default function UpdateGroceryList() {
                         <div className="purchased-input">
                             <input
                                 onChange={handleChange}
+                                key={grocery._id}
                                 id="purchased"
                                 value={grocery.purchased}
                                 placeholder="false"
@@ -161,6 +169,7 @@ export default function UpdateGroceryList() {
                         <div className="Date-input">
                             <input
                                 onChange={handleChange}
+                                key={grocery._id}
                                 id="Date"
                                 value={grocery.Date}
                                 placeholder="yyyy-mm-dd"
@@ -174,13 +183,14 @@ export default function UpdateGroceryList() {
                         <div className="type-input">
                             <input
                                 onChange={handleChange}
+                                key={grocery._id}
                                 id="type"
                                 value={grocery.type}
                                 placeholder="type"
                             />
                         </div>
                     <div className="editButtons">
-                        <button type="submit" className="editButton">
+                        <button type="submit" className="editButton" onSubmit={handleSubmit}>
                             Submit Updates
                         </button>
                         <button className="deleteButton" onClick={handleDelete}>
