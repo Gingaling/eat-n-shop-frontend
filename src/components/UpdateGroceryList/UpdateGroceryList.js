@@ -44,7 +44,7 @@ export default function UpdateGroceryList() {
         if (confirm) {
             try {
                 // eslint-disable-next-line
-                const res = await axios.delete(`https://kitchen-count.herokuapp.com/grocery/${grocery._id}`);
+                const res = await axios.delete(`https://kitchen-count.herokuapp.com/grocery/${grocery.name}`);
                 if (res.status === 200) {
                     navigate('/');
                 }
