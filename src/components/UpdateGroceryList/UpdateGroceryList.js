@@ -10,7 +10,7 @@ export default function UpdateGroceryList() {
     const [grocery, setGrocery] = useState(null);
 
     useEffect(() => {
-        fetch(`https://kitchen-count.herokuapp.com/grocery/`)
+        fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
             .then(res => res.json())
             .then(data => {
                 setGrocery(data);
@@ -23,15 +23,15 @@ export default function UpdateGroceryList() {
     }
     
     const handleChange = (event) => {
-        setGrocery({ ...grocery, [event.target.id]: event.target.value });
+        setGrocery({ ...grocery, [event.target.name]: event.target.value });
     };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const res = await axios.put(`https://kitchen-count.herokuapp.com/grocery/${grocery._id}`, grocery);
+            const res = await axios.put(`https://eat-n-shop-api.herokuapp.com/grocery/${grocery.name}`, grocery);
             if (res.status === 200) {
-                console.log('all is good');
+            console.log('all is good');
             }
         } catch (err) {
             console.log(err)
@@ -44,8 +44,9 @@ export default function UpdateGroceryList() {
         if (confirm) {
             try {
                 // eslint-disable-next-line
-                const res = await axios.delete(`https://kitchen-count.herokuapp.com/grocery/${grocery.name}`);
+                const res = await axios.delete(`https://eat-n-shop-api.herokuapp.com/grocery/${grocery.name}`);
                 if (res.status === 200) {
+                    console.log('all is good');
                     navigate('/');
                 }
             } catch (err) {

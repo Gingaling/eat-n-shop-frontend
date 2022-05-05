@@ -9,7 +9,7 @@ export default function ShoppingList() {
 	const [shoppingList, setShoppingList] = useState([]);
 	useEffect(
 		() => {
-			fetch(`https://kitchen-count.herokuapp.com/grocery/`)
+			fetch(`https://eat-n-shop-api.herokuapp.com/grocery/`)
 				.then(response => {
 					return response.json();
 				})
